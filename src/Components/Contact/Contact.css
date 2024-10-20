@@ -1,0 +1,75 @@
+.c-container{
+    gap: 1rem;
+}
+.c-container>div{
+    flex: 1;
+}
+.c-left{
+    gap: .5rem;
+}
+
+/* the four modes */
+.modes{
+    margin-top: 2rem;
+    gap: 1rem;
+}
+.row{
+    width: 100%;
+    gap: 1.5rem;
+}
+.mode{
+    width: 16rem;
+    padding: 1rem;
+    border: .8px solid rgba(128,128,128,0.143);
+    border-radius: 5px;
+    gap: 1rem;
+    transition: all 300ms ease-in;
+    flex-grow: 1;
+}
+.mode:hover{
+    scale: 1.1;
+    box-shadow: var(--shadow);
+}
+.mode-info{
+    gap: 2rem;
+}
+.mode-info .action-info>:nth-child(1){
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.mode-info .icon{
+    padding: .5rem .5rem .3rem;
+    background-color: #eeeeff;
+    border-radius: 5px;
+    color: var(--blue);
+}
+.mode-info{
+    width: 100%;
+}
+.mode-button{
+    padding: 0.5rem 1rem;
+    width: 100%;
+    color: var(--blue);
+    font-weight: 600;
+    font-size: .9rem;
+    background-color: #eeeeff;
+    border-radius: 5px;
+    transition: all 300ms ease-in;
+}
+.mode-button:hover{
+    background: var(--blue-gradient);
+    color: white;
+    scale: 0.9;
+    cursor: pointer;
+}
+
+@media ( max-width : 817px){
+    .c-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .modes{
+        width: 100%;
+    }
+}

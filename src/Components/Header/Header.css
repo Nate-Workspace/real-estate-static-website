@@ -1,0 +1,40 @@
+.h-wrapper{
+    color: white;
+}
+.h-container{
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--secondary);
+}
+.h-menu{
+    /* you use gap after making the display flex */
+    gap: 2rem;
+}
+.h-menu>*:hover{
+    cursor: pointer;
+}
+.menu-icon{
+    display: none;
+}
+
+@media (max-width:768px) {
+    .menu-icon{
+        display: block;
+    }
+    .h-menu{
+        background: white;
+        position:absolute;
+        flex-direction: column;
+        color: var(--black);
+        padding: 3rem;
+        top: 3rem;
+        right: 3rem;
+        z-index: 3;
+        gap: 2rem;
+        border-radius: 10px;
+        justify-content: flex-start;
+        font-weight: 500;
+        box-shadow: 0px 4px 4px rgba(0,0,0,0.45);
+    }
+}
